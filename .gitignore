@@ -5,6 +5,9 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 
+# Unity Logs
+HorrorSchool/Logs/*.log
+
 # Visual Studio cache directory
 .vs/
 
