@@ -54,30 +54,37 @@ public class MoveEnemy : MonoBehaviour
                 }
                 break;
         }
-        animator.SetFloat("Speed", agent.velocity.magnitude);
+        //animator.SetFloat("Speed", agent.velocity.magnitude);
     }
 
     public void SetState(EnemyState tempState, Transform targetObj = null)
-    {
+    {//StateÇê›íËÇ∑ÇÈ
         state = tempState;
         switch (tempState)
         {
             case EnemyState.Walk:
                 setPosition.CreateRandomPosition();
                 agent.SetDestination(setPosition.GetDestination());
+                animator.SetBool("IsWalking", true);
+                animator.SetBool("IsChasing", false);
                 break;
 
             case EnemyState.Chase:
                 playerTransform = targetObj;
                 agent.SetDestination(playerTransform.position);
+                animator.SetBool("IsWalking", false);
+                animator.SetBool("IsChasing", true);
                 break;
 
             case EnemyState.Wait:
                 agent.ResetPath();
                 elapsedTime = 0f;
+                animator.SetBool("IsWalking", false);
+                animator.SetBool("IsChasing", false);
                 break;
         }
     }
+
 
     public EnemyState GetState()
     {
