@@ -8,6 +8,8 @@
 Assets/AssetStoreTools*
 
 *.tga
+# Unity Logs
+HorrorSchool/Logs/*.log
 
 # Visual Studio cache directory
 .vs/
