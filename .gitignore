@@ -11,7 +11,11 @@ Assets/AssetStoreTools*
 HorrorSchool/Logs/*.log
 # Unity Logs
 HorrorSchool/Logs/
-
+# Specific log files
+HorrorSchool/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+HorrorSchool/UserSettings/Layouts/default-2021.dwlt
+# Specific meta files
+HorrorSchool/Assets/Zombie.meta
 # Specific Meta Files
 HorrorSchool/Assets/Zombie/*.meta
 HorrorSchool/Assets/Zombie/textures/**/*.meta
