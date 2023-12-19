@@ -3,7 +3,13 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
 Assets/AssetStoreTools*
+
+*.tga
+# Unity Logs
+HorrorSchool/Logs/*.log
 
 # Visual Studio cache directory
 .vs/
@@ -51,3 +57,10 @@ sysinfo.txt
 
 # Crashlytics generated file
 Assets/StreamingAssets/crashlytics-build.properties
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Temporary auto-generated Android Assets
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
